@@ -21,6 +21,9 @@
 		8A9E38531A682E68007FF5E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9E38351A682E68007FF5E3 /* UIKit.framework */; };
 		8A9E385B1A682E68007FF5E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A9E38591A682E68007FF5E3 /* InfoPlist.strings */; };
 		8A9E385D1A682E68007FF5E3 /* KeepThinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E385C1A682E68007FF5E3 /* KeepThinkTests.m */; };
+		8A9E38691A6839BD007FF5E3 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9E38681A6839BD007FF5E3 /* right.png */; };
+		8A9E386B1A6839C4007FF5E3 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9E386A1A6839C4007FF5E3 /* left.png */; };
+		8A9E386D1A683B70007FF5E3 /* robertPires.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A9E386C1A683B70007FF5E3 /* robertPires.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		8A9E38581A682E68007FF5E3 /* KeepThinkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeepThinkTests-Info.plist"; sourceTree = "<group>"; };
 		8A9E385A1A682E68007FF5E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8A9E385C1A682E68007FF5E3 /* KeepThinkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeepThinkTests.m; sourceTree = "<group>"; };
+		8A9E38681A6839BD007FF5E3 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		8A9E386A1A6839C4007FF5E3 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		8A9E386C1A683B70007FF5E3 /* robertPires.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = robertPires.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 		8A9E38251A682E68007FF5E3 = {
 			isa = PBXGroup;
 			children = (
+				8A9E38661A6839A7007FF5E3 /* resources */,
 				8A9E38371A682E68007FF5E3 /* KeepThink */,
 				8A9E38561A682E68007FF5E3 /* KeepThinkTests */,
 				8A9E38301A682E68007FF5E3 /* Frameworks */,
@@ -150,6 +157,24 @@
 				8A9E38591A682E68007FF5E3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A9E38661A6839A7007FF5E3 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A9E38671A6839B2007FF5E3 /* images */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		8A9E38671A6839B2007FF5E3 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8A9E386C1A683B70007FF5E3 /* robertPires.JPG */,
+				8A9E386A1A6839C4007FF5E3 /* left.png */,
+				8A9E38681A6839BD007FF5E3 /* right.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +255,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A9E384A1A682E68007FF5E3 /* Images.xcassets in Resources */,
+				8A9E386D1A683B70007FF5E3 /* robertPires.JPG in Resources */,
+				8A9E386B1A6839C4007FF5E3 /* left.png in Resources */,
 				8A9E383C1A682E68007FF5E3 /* InfoPlist.strings in Resources */,
+				8A9E38691A6839BD007FF5E3 /* right.png in Resources */,
 				8A9E38451A682E68007FF5E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

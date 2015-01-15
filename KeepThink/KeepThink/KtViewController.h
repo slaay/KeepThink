@@ -10,4 +10,9 @@
 
 @interface KtViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *lblTimer;
+
+- (IBAction)btnBarstartGame:(id)sender;
+- (IBAction)btnBarStopPressed:(id)sender;
+
 @end
