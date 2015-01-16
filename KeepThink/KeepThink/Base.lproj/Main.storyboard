@@ -51,6 +51,9 @@
                                 <state key="normal" image="right.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnRight:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lsh-Lp-Bgh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28b-Tp-Ovt">
                                 <rect key="frame" x="31" y="323" width="123" height="128"/>
@@ -58,6 +61,9 @@
                                 <state key="normal" image="left.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnLeft:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="juW-n1-CdO"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player belongs to which team?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUT-Bp-7rs">
                                 <rect key="frame" x="44" y="71" width="236" height="21"/>
@@ -77,10 +83,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I19-nu-euD">
+                                <rect key="frame" x="20" y="503" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="btnResultColor" destination="I19-nu-euD" id="yN4-1Y-CLt"/>
                         <outlet property="lblTimer" destination="KzG-RI-KVQ" id="C9N-Gr-V9S"/>
                     </connections>
                 </viewController>

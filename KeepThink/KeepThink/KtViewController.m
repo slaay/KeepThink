@@ -10,10 +10,19 @@
 
 @interface KtViewController ()
 
+
 @property (strong, nonatomic) NSTimer *stopWatchTimer; // Store the timer that fires after a certain time
 @property (strong, nonatomic) NSDate *startDate; // Stores the date of the click on the start button *
 
+@property (strong, nonatomic) NSDate *startTimeValue;
+
+
+
 @end
+
+
+
+
 
 @implementation KtViewController
 
@@ -29,7 +38,19 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+/*
+ // Get a current time for where you want to start measuring from
+ NSDate *date = [NSDate date];
+ 
+ // do work...
+ 
+ // Find elapsed time and convert to milliseconds
+ // Use (-) modifier to conversion since receiver is earlier than now
+ double timePassed_ms = [date timeIntervalSinceNow] * -1000.0;
+ 
+ 
+ 
+ */
 
 
 - (void)updateTimer
@@ -47,6 +68,13 @@
     // Format the elapsed time and set it to the label
     NSString *timeString = [dateFormatter stringFromDate:timerDate];
     self.lblTimer.text = timeString;
+    
+    double timePassed_ms = [self.startTimeValue timeIntervalSinceNow] * -1000.0;
+    
+    if (timePassed_ms > 1000) {
+       [_btnResultColor setBackgroundColor:[UIColor whiteColor]];
+    }
+    
 }
 - (IBAction)btnBarstartGame:(id)sender {
     self.startDate = [NSDate date];
@@ -57,11 +85,20 @@
                                                          selector:@selector(updateTimer)
                                                          userInfo:nil
                                                           repeats:YES];
+  self.startTimeValue = [NSDate date];
 }
 
 - (IBAction)btnBarStopPressed:(id)sender {
     [self.stopWatchTimer invalidate];
     self.stopWatchTimer = nil;
     [self updateTimer];
+}
+- (IBAction)btnLeft:(id)sender {
+   // _btnResultColor.backgroundColor = red;
+    [_btnResultColor setBackgroundColor:[UIColor greenColor]];
+}
+
+- (IBAction)btnRight:(id)sender {
+    [_btnResultColor setBackgroundColor:[UIColor redColor]];
 }
 @end
