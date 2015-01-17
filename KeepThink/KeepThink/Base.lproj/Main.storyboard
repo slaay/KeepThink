@@ -32,14 +32,9 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="KeepThink" id="YrF-9t-K84">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="play" id="YQz-oh-1MX">
+                                        <barButtonItem key="rightBarButtonItem" image="Drawers.png" id="Wz2-hY-P72">
                                             <connections>
-                                                <action selector="btnBarstartGame:" destination="vXZ-lx-hvc" id="Aq2-x5-GAS"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="6yD-ru-N8J">
-                                            <connections>
-                                                <action selector="btnBarStopPressed:" destination="vXZ-lx-hvc" id="9bZ-l9-6Zy"/>
+                                                <segue destination="cxa-0R-Dif" kind="modal" id="h6g-A5-r0B"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -84,12 +79,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I19-nu-euD">
-                                <rect key="frame" x="20" y="503" width="280" height="30"/>
+                                <rect key="frame" x="20" y="480" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LwM-F3-c8s">
+                                <rect key="frame" x="0.0" y="518" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="play" id="YQz-oh-1MX">
+                                        <connections>
+                                            <action selector="btnBarstartGame:" destination="vXZ-lx-hvc" id="Aq2-x5-GAS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="245" style="plain" systemItem="fixedSpace" id="L1P-yb-coL"/>
+                                    <barButtonItem systemItem="stop" id="6yD-ru-N8J">
+                                        <connections>
+                                            <action selector="btnBarStopPressed:" destination="vXZ-lx-hvc" id="9bZ-l9-6Zy"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -100,9 +112,137 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="448" y="743"/>
+        </scene>
+        <!--Kt About Me - About me-->
+        <scene sceneID="qKh-SH-dJh">
+            <objects>
+                <viewController id="cWY-p7-aZK" customClass="KtAboutMe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UMg-XN-cjC"/>
+                        <viewControllerLayoutGuide type="bottom" id="dLH-V6-hSx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sXE-f5-Y2y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Arsenal_Jack_Wilshere.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Neo-bA-DNV">
+                                <rect key="frame" x="85" y="100" width="151" height="254"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About me" image="Contact.png" id="Tta-DG-yTW"/>
+                    <connections>
+                        <outlet property="imgMe" destination="Neo-bA-DNV" id="5VK-Py-KeL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCj-Ui-YJ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1603" y="194"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bqI-TQ-7BT">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="cxa-0R-Dif" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="paf-L4-FrP"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="CWI-qe-XxB">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cWY-p7-aZK" kind="relationship" relationship="viewControllers" id="E6g-L1-0Rn"/>
+                        <segue destination="nhr-z2-V2K" kind="relationship" relationship="viewControllers" id="Pdr-eK-bih"/>
+                        <segue destination="O8e-rU-SN4" kind="relationship" relationship="viewControllers" id="2fA-7I-pev"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ras-c3-Wy6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061" y="654"/>
+        </scene>
+        <!--View Controller - Third party-->
+        <scene sceneID="RGs-Rq-x2r">
+            <objects>
+                <viewController id="nhr-z2-V2K" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tmb-5A-QCe"/>
+                        <viewControllerLayoutGuide type="bottom" id="rb1-f8-uQp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ydz-6G-f8x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Icons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XS5-4r-zvg">
+                                <rect key="frame" x="20" y="119" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.54618730522207892" green="0.74379146006536301" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PixelLove" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Wa-Hm-WwK">
+                                <rect key="frame" x="20" y="165" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIp-ho-i1V">
+                                <rect key="frame" x="20" y="183" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="http://www.pixellove.com/">
+                                        <attributes>
+                                            <color key="NSColor" red="0.025531355481759468" green="0.11153463264211079" blue="0.69698963994565211" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Third party attribution " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFr-59-MRX">
+                                <rect key="frame" x="20" y="59" width="290" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Third party" image="Signpost.png" id="d4q-AV-vqD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JVW-o2-Pa2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1603" y="846"/>
+        </scene>
+        <!--View Controller - Team Slaay-->
+        <scene sceneID="ZSo-c1-cRq">
+            <objects>
+                <viewController id="O8e-rU-SN4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cp1-xY-Kya"/>
+                        <viewControllerLayoutGuide type="bottom" id="9zf-9N-d1F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p9v-lh-k3A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Team Slaay" image="Fencing.png" id="TIo-Du-FIc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wwn-Ru-H8D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1603" y="1519"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Arsenal_Jack_Wilshere.jpg" width="220" height="451"/>
+        <image name="Contact.png" width="25" height="25"/>
+        <image name="Drawers.png" width="24" height="24"/>
+        <image name="Fencing.png" width="35" height="29"/>
+        <image name="Signpost.png" width="25" height="25"/>
         <image name="left.png" width="128" height="128"/>
         <image name="right.png" width="128" height="128"/>
         <image name="robertPires.JPG" width="209" height="250"/>
