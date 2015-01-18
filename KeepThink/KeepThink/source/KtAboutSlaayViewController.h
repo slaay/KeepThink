@@ -13,5 +13,6 @@
 @property (strong, nonatomic) IBOutlet UIImageView *imgCasburn;
 @property (strong, nonatomic) IBOutlet UIImageView *imgAlison;
 
+- (IBAction)btnFacebook:(id)sender;
 
 @end

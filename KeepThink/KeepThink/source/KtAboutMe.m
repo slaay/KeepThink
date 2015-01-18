@@ -59,4 +59,29 @@
 }
 */
 
+- (IBAction)btnFaceBook:(id)sender {
+    
+    NSURL *facebookURL;
+    
+    if ([sender tag] == 1) {
+        //Presley
+        NSLog(@"Lee");
+        facebookURL = [NSURL URLWithString:@"fb://profile/379887218802553"];
+
+    }
+    else if ([sender tag] == 2) {
+        //Videl
+         NSLog(@"Videl");
+        facebookURL = [NSURL URLWithString:@"fb://profile/379887218802553"];
+
+    }
+    
+
+    if ([[UIApplication sharedApplication] canOpenURL:facebookURL]) {
+        [[UIApplication sharedApplication] openURL:facebookURL];
+    } else {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.facebook.com/slaaysourcecoders"]];
+    }
+  
+}
 @end

@@ -14,5 +14,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *imgPresley;
 @property (strong, nonatomic) IBOutlet UIImageView *imgVidel;
 
+/*----Open native apps*/
+- (IBAction)btnFaceBook:(id)sender;
 
 @end

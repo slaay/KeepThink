@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A35BB7B1A6C258A008BC111 /* 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A35BB7A1A6C258A008BC111 /* 640x960.png */; };
+		8A35BB7D1A6C25D4008BC111 /* 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A35BB7C1A6C25D4008BC111 /* 640x1136.png */; };
 		8A5356A31A6B758A0069EBD8 /* casburn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A5356A21A6B758A0069EBD8 /* casburn.jpg */; };
+		8A93A9451A6BB6D500B1F976 /* KtThirdPartyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A93A9441A6BB6D500B1F976 /* KtThirdPartyViewController.m */; };
 		8A9E38321A682E68007FF5E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9E38311A682E68007FF5E3 /* Foundation.framework */; };
 		8A9E38341A682E68007FF5E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9E38331A682E68007FF5E3 /* CoreGraphics.framework */; };
 		8A9E38361A682E68007FF5E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9E38351A682E68007FF5E3 /* UIKit.framework */; };
@@ -305,7 +308,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A35BB7A1A6C258A008BC111 /* 640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x960.png; sourceTree = "<group>"; };
+		8A35BB7C1A6C25D4008BC111 /* 640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x1136.png; sourceTree = "<group>"; };
 		8A5356A21A6B758A0069EBD8 /* casburn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = casburn.jpg; sourceTree = "<group>"; };
+		8A93A9431A6BB6D500B1F976 /* KtThirdPartyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KtThirdPartyViewController.h; path = source/KtThirdPartyViewController.h; sourceTree = "<group>"; };
+		8A93A9441A6BB6D500B1F976 /* KtThirdPartyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KtThirdPartyViewController.m; path = source/KtThirdPartyViewController.m; sourceTree = "<group>"; };
 		8A9E382E1A682E68007FF5E3 /* KeepThink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepThink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9E38311A682E68007FF5E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8A9E38331A682E68007FF5E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -623,6 +630,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A35BB791A6C257D008BC111 /* launchscreen */ = {
+			isa = PBXGroup;
+			children = (
+				8A35BB7C1A6C25D4008BC111 /* 640x1136.png */,
+				8A35BB7A1A6C258A008BC111 /* 640x960.png */,
+			);
+			name = launchscreen;
+			sourceTree = "<group>";
+		};
 		8A5356A11A6B758A0069EBD8 /* teamMembers */ = {
 			isa = PBXGroup;
 			children = (
@@ -723,6 +739,7 @@
 		8A9E38671A6839B2007FF5E3 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				8A35BB791A6C257D008BC111 /* launchscreen */,
 				8AAF70721A6B87AA001A6C6B /* logo */,
 				8A5356A11A6B758A0069EBD8 /* teamMembers */,
 				8AA066B81A6AD89700D65CFA /* AppImages */,
@@ -1045,6 +1062,8 @@
 				8AA066BB1A6AE05E00D65CFA /* KtAboutMe.m */,
 				8AAF707F1A6B8D82001A6C6B /* KtAboutSlaayViewController.h */,
 				8AAF70801A6B8D82001A6C6B /* KtAboutSlaayViewController.m */,
+				8A93A9431A6BB6D500B1F976 /* KtThirdPartyViewController.h */,
+				8A93A9441A6BB6D500B1F976 /* KtThirdPartyViewController.m */,
 			);
 			name = source;
 			sourceTree = "<group>";
@@ -1252,6 +1271,7 @@
 				8AA066B11A6AD87000D65CFA /* Arsenal_Jack_Wilshere.jpg in Resources */,
 				8AA0662F1A6AD87000D65CFA /* Tumblr.png in Resources */,
 				8AA066851A6AD87000D65CFA /* Printer@2x.png in Resources */,
+				8A35BB7B1A6C258A008BC111 /* 640x960.png in Resources */,
 				8AA065D81A6AD87000D65CFA /* Calculator.png in Resources */,
 				8AA066831A6AD87000D65CFA /* Pinwheel@2x.png in Resources */,
 				8AA065E51A6AD87000D65CFA /* Facebook.png in Resources */,
@@ -1371,6 +1391,7 @@
 				8AA066331A6AD87000D65CFA /* Upload.png in Resources */,
 				8AA065ED1A6AD87000D65CFA /* Forrst.png in Resources */,
 				8AA065E41A6AD87000D65CFA /* Evernote.png in Resources */,
+				8A35BB7D1A6C25D4008BC111 /* 640x1136.png in Resources */,
 				8AA0665F1A6AD87000D65CFA /* Games_iOS@2x.png in Resources */,
 				8AA0665C1A6AD87000D65CFA /* Forrst@2x.png in Resources */,
 				8AA066911A6AD87000D65CFA /* Shuffle@2x.png in Resources */,
@@ -1430,6 +1451,7 @@
 				8A9E38421A682E68007FF5E3 /* KtAppDelegate.m in Sources */,
 				8AAF70811A6B8D82001A6C6B /* KtAboutSlaayViewController.m in Sources */,
 				8AA066BC1A6AE05E00D65CFA /* KtAboutMe.m in Sources */,
+				8A93A9451A6BB6D500B1F976 /* KtThirdPartyViewController.m in Sources */,
 				8A9E38481A682E68007FF5E3 /* KtViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1553,8 +1575,6 @@
 		8A9E38611A682E68007FF5E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KeepThink/KeepThink-Prefix.pch";
 				INFOPLIST_FILE = "KeepThink/KeepThink-Info.plist";
@@ -1566,8 +1586,6 @@
 		8A9E38621A682E68007FF5E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KeepThink/KeepThink-Prefix.pch";
 				INFOPLIST_FILE = "KeepThink/KeepThink-Info.plist";
