@@ -1,18 +1,18 @@
 //
-//  KtAboutMe.m
+//  KtAboutSlaayViewController.m
 //  KeepThink
 //
-//  Created by Presley on 17/01/15.
+//  Created by Presley on 18/01/15.
 //  Copyright (c) 2015 SlaaySourceCoders. All rights reserved.
 //
 
-#import "KtAboutMe.h"
+#import "KtAboutSlaayViewController.h"
 
-@interface KtAboutMe ()
+@interface KtAboutSlaayViewController ()
 
 @end
 
-@implementation KtAboutMe
+@implementation KtAboutSlaayViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,17 +29,21 @@
     // Do any additional setup after loading the view.
     
     
-    self.imgPresley.layer.cornerRadius = self.imgPresley.frame.size.width / 2;
-    self.imgPresley.clipsToBounds = YES;
-    self.imgPresley.layer.borderWidth = 3.0f;
-    self.imgPresley.layer.borderColor = [UIColor greenColor].CGColor;
-    
-    self.imgVidel.layer.cornerRadius = self.imgPresley.frame.size.width / 2;
-    self.imgVidel.clipsToBounds = YES;
-    self.imgVidel.layer.borderWidth = 3.0f;
-    self.imgVidel.layer.borderColor = [UIColor greenColor].CGColor;
+    self.imgSanket.layer.cornerRadius = self.imgSanket.frame.size.width / 2;
+    self.imgSanket.clipsToBounds = YES;
+    self.imgSanket.layer.borderWidth = 3.0f;
+    self.imgSanket.layer.borderColor = [UIColor greenColor].CGColor;
 
     
+    self.imgCasburn.layer.cornerRadius = self.imgCasburn.frame.size.width / 2;
+    self.imgCasburn.clipsToBounds = YES;
+    self.imgCasburn.layer.borderWidth = 3.0f;
+    self.imgCasburn.layer.borderColor = [UIColor greenColor].CGColor;
+    
+    self.imgAlison.layer.cornerRadius = self.imgAlison.frame.size.width / 2;
+    self.imgAlison.clipsToBounds = YES;
+    self.imgAlison.layer.borderWidth = 3.0f;
+    self.imgAlison.layer.borderColor = [UIColor greenColor].CGColor;
 }
 
 - (void)didReceiveMemoryWarning

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Kt View Controller-->
@@ -9,8 +10,8 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="KtViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="wmz-QS-zWN"/>
+                        <viewControllerLayoutGuide type="bottom" id="JfC-uX-gnH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -114,40 +115,133 @@
             </objects>
             <point key="canvasLocation" x="448" y="743"/>
         </scene>
-        <!--Kt About Me - About me-->
+        <!--Kt About Me - Team Slaay-->
         <scene sceneID="qKh-SH-dJh">
             <objects>
                 <viewController id="cWY-p7-aZK" customClass="KtAboutMe" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="UMg-XN-cjC"/>
-                        <viewControllerLayoutGuide type="bottom" id="dLH-V6-hSx"/>
+                        <viewControllerLayoutGuide type="top" id="0l5-s0-6VF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Awg-os-z10"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sXE-f5-Y2y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Arsenal_Jack_Wilshere.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Neo-bA-DNV">
-                                <rect key="frame" x="85" y="100" width="151" height="254"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8XT-x3-7Aj">
+                                <rect key="frame" x="0.0" y="52" width="320" height="948"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
+                                <subviews>
+                                    <containerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ae-Gt-lMX">
+                                        <rect key="frame" x="0.0" y="-11" width="320" height="1000"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1200" id="cOF-qW-dGR"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="yd4-Ng-xOH" kind="embed" id="Ya3-52-ZVu"/>
+                                        </connections>
+                                    </containerView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="presley.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cfX-qG-cJ9">
+                                        <rect key="frame" x="91" y="20" width="139" height="133"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="videl.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mov-03-l2Q">
+                                        <rect key="frame" x="84" y="247" width="152" height="148"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Presley Dias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWO-9m-TKH">
+                                        <rect key="frame" x="20" y="175" width="280" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Videl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkx-B4-hdw">
+                                        <rect key="frame" x="20" y="403" width="280" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhQ-n1-Aey">
+                                        <rect key="frame" x="84" y="204" width="33" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="facebook_.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGp-5K-efl">
+                                        <rect key="frame" x="144" y="204" width="33" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="twitter_.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CvP-yH-NFB">
+                                        <rect key="frame" x="203" y="204" width="33" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="github_.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viy-nR-qGi">
+                                        <rect key="frame" x="84" y="432" width="33" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="facebook_.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pnk-Qi-hWC">
+                                        <rect key="frame" x="144" y="432" width="33" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="twitter_.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqE-nl-HlJ">
+                                        <rect key="frame" x="203" y="432" width="33" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="github_.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6Ae-Gt-lMX" firstAttribute="leading" secondItem="8XT-x3-7Aj" secondAttribute="leading" id="Fdy-Vv-Ubt"/>
+                                    <constraint firstItem="6Ae-Gt-lMX" firstAttribute="top" secondItem="8XT-x3-7Aj" secondAttribute="centerY" constant="41" id="MFv-XA-YgL"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Ae-Gt-lMX" secondAttribute="trailing" id="N7W-f0-GAE"/>
+                                    <constraint firstItem="6Ae-Gt-lMX" firstAttribute="centerX" secondItem="8XT-x3-7Aj" secondAttribute="centerX" id="TdS-i5-mp7"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Ae-Gt-lMX" secondAttribute="bottom" constant="15" id="XBN-14-wcU"/>
+                                </constraints>
+                            </scrollView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RSf-RE-WBA">
+                                <rect key="frame" x="0.0" y="8" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.69202095299999999" green="0.86728741919999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.71660094110000006" green="0.51259927839999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Team Slaay" id="VHC-sR-kTx"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About me" image="Contact.png" id="Tta-DG-yTW"/>
+                    <tabBarItem key="tabBarItem" title="Team Slaay" image="Fencing.png" id="Tta-DG-yTW"/>
                     <connections>
-                        <outlet property="imgMe" destination="Neo-bA-DNV" id="5VK-Py-KeL"/>
+                        <outlet property="imgPresley" destination="cfX-qG-cJ9" id="9tC-b0-tZB"/>
+                        <outlet property="imgVidel" destination="mov-03-l2Q" id="9tR-86-aJU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cCj-Ui-YJ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1603" y="194"/>
+            <point key="canvasLocation" x="1967" y="241"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bqI-TQ-7BT">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="cxa-0R-Dif" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="paf-L4-FrP"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="CWI-qe-XxB">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -168,8 +262,8 @@
             <objects>
                 <viewController id="nhr-z2-V2K" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Tmb-5A-QCe"/>
-                        <viewControllerLayoutGuide type="bottom" id="rb1-f8-uQp"/>
+                        <viewControllerLayoutGuide type="top" id="xvm-11-WKo"/>
+                        <viewControllerLayoutGuide type="bottom" id="En9-qe-OX5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ydz-6G-f8x">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -217,35 +311,161 @@
             </objects>
             <point key="canvasLocation" x="1603" y="846"/>
         </scene>
-        <!--View Controller - Team Slaay-->
+        <!--View Controller - About KeepThink-->
         <scene sceneID="ZSo-c1-cRq">
             <objects>
                 <viewController id="O8e-rU-SN4" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Cp1-xY-Kya"/>
-                        <viewControllerLayoutGuide type="bottom" id="9zf-9N-d1F"/>
+                        <viewControllerLayoutGuide type="top" id="EQZ-E7-oko"/>
+                        <viewControllerLayoutGuide type="bottom" id="x1u-Aw-MtR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="p9v-lh-k3A">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Team Slaay" image="Fencing.png" id="TIo-Du-FIc"/>
+                    <tabBarItem key="tabBarItem" title="About KeepThink" image="Doc.png" id="TIo-Du-FIc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wwn-Ru-H8D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1603" y="1519"/>
         </scene>
+        <!--Kt About Slaay View Controller-->
+        <scene sceneID="SVC-xO-6B2">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="yd4-Ng-xOH" customClass="KtAboutSlaayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fas-qK-5sU"/>
+                        <viewControllerLayoutGuide type="bottom" id="WBc-V1-3MN"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ZD2-Wr-zec">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sanket.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dG2-1d-Z8c">
+                                <rect key="frame" x="96" y="27" width="128" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="casburn.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ycH-20-whQ">
+                                <rect key="frame" x="84" y="258" width="152" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alison.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="BxD-bU-iLa">
+                                <rect key="frame" x="84" y="486" width="152" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sanket Malik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wy4-kn-yaI">
+                                <rect key="frame" x="20" y="176" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Casburn Noronha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oX-G4-OmS">
+                                <rect key="frame" x="20" y="414" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alison Fernandes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dk5-LN-zP0">
+                                <rect key="frame" x="20" y="642" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1A-aT-Gzf">
+                                <rect key="frame" x="84" y="205" width="33" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="facebook_.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFI-sf-Dao">
+                                <rect key="frame" x="144" y="205" width="33" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="twitter_.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQN-Rn-i1t">
+                                <rect key="frame" x="203" y="205" width="33" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="github_.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REs-cQ-qhq">
+                                <rect key="frame" x="84" y="443" width="33" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="facebook_.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mz-xl-MS2">
+                                <rect key="frame" x="144" y="443" width="33" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="twitter_.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuu-3e-cXM">
+                                <rect key="frame" x="203" y="443" width="33" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="github_.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yh7-YB-vtl">
+                                <rect key="frame" x="84" y="671" width="33" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="facebook_.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnf-37-1Gn">
+                                <rect key="frame" x="144" y="671" width="33" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="twitter_.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkK-WU-3fK">
+                                <rect key="frame" x="203" y="671" width="33" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="github_.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="imgAlison" destination="BxD-bU-iLa" id="gEz-5Q-QBt"/>
+                        <outlet property="imgCasburn" destination="ycH-20-whQ" id="1Vo-FE-axG"/>
+                        <outlet property="imgSanket" destination="dG2-1d-Z8c" id="B9F-x7-g0W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CeS-Ea-7SV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2502" y="241"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Arsenal_Jack_Wilshere.jpg" width="220" height="451"/>
-        <image name="Contact.png" width="25" height="25"/>
+        <image name="Doc.png" width="19" height="25"/>
         <image name="Drawers.png" width="24" height="24"/>
         <image name="Fencing.png" width="35" height="29"/>
         <image name="Signpost.png" width="25" height="25"/>
+        <image name="alison.jpeg" width="250" height="250"/>
+        <image name="casburn.jpg" width="480" height="480"/>
+        <image name="facebook_.png" width="32" height="32"/>
+        <image name="github_.png" width="32" height="32"/>
         <image name="left.png" width="128" height="128"/>
+        <image name="presley.jpg" width="540" height="571"/>
         <image name="right.png" width="128" height="128"/>
         <image name="robertPires.JPG" width="209" height="250"/>
+        <image name="sanket.jpg" width="913" height="1026"/>
+        <image name="twitter_.png" width="32" height="32"/>
+        <image name="videl.jpg" width="250" height="250"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

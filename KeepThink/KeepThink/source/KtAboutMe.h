@@ -10,5 +10,9 @@
 
 @interface KtAboutMe : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *imgMe;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrlView;
+@property (strong, nonatomic) IBOutlet UIImageView *imgPresley;
+@property (strong, nonatomic) IBOutlet UIImageView *imgVidel;
+
 
 @end
