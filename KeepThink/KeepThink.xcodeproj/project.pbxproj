@@ -10,6 +10,9 @@
 		8A35BB7B1A6C258A008BC111 /* 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A35BB7A1A6C258A008BC111 /* 640x960.png */; };
 		8A35BB7D1A6C25D4008BC111 /* 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A35BB7C1A6C25D4008BC111 /* 640x1136.png */; };
 		8A5356A31A6B758A0069EBD8 /* casburn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A5356A21A6B758A0069EBD8 /* casburn.jpg */; };
+		8A781ADB1A7011F9002884C5 /* easy.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A781ADA1A7011F9002884C5 /* easy.json */; };
+		8A781ADD1A701455002884C5 /* medium.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A781ADC1A701455002884C5 /* medium.json */; };
+		8A781ADF1A701515002884C5 /* difficult.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A781ADE1A701515002884C5 /* difficult.json */; };
 		8A93A9451A6BB6D500B1F976 /* KtThirdPartyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A93A9441A6BB6D500B1F976 /* KtThirdPartyViewController.m */; };
 		8A9E38321A682E68007FF5E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9E38311A682E68007FF5E3 /* Foundation.framework */; };
 		8A9E38341A682E68007FF5E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9E38331A682E68007FF5E3 /* CoreGraphics.framework */; };
@@ -295,6 +298,7 @@
 		8AAF70831A6B9271001A6C6B /* presley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AAF70821A6B9271001A6C6B /* presley.jpg */; };
 		8AAF70851A6B93D2001A6C6B /* videl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AAF70841A6B93D2001A6C6B /* videl.jpg */; };
 		8AAF70871A6B94AA001A6C6B /* alison.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8AAF70861A6B94AA001A6C6B /* alison.jpeg */; };
+		8AD1D6541A6ECAD40031AADD /* KeepThinkLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD1D6531A6ECAD40031AADD /* KeepThinkLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -311,6 +315,9 @@
 		8A35BB7A1A6C258A008BC111 /* 640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x960.png; sourceTree = "<group>"; };
 		8A35BB7C1A6C25D4008BC111 /* 640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x1136.png; sourceTree = "<group>"; };
 		8A5356A21A6B758A0069EBD8 /* casburn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = casburn.jpg; sourceTree = "<group>"; };
+		8A781ADA1A7011F9002884C5 /* easy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = easy.json; path = JSON/easy.json; sourceTree = "<group>"; };
+		8A781ADC1A701455002884C5 /* medium.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = medium.json; path = JSON/medium.json; sourceTree = "<group>"; };
+		8A781ADE1A701515002884C5 /* difficult.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = difficult.json; path = JSON/difficult.json; sourceTree = "<group>"; };
 		8A93A9431A6BB6D500B1F976 /* KtThirdPartyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KtThirdPartyViewController.h; path = source/KtThirdPartyViewController.h; sourceTree = "<group>"; };
 		8A93A9441A6BB6D500B1F976 /* KtThirdPartyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KtThirdPartyViewController.m; path = source/KtThirdPartyViewController.m; sourceTree = "<group>"; };
 		8A9E382E1A682E68007FF5E3 /* KeepThink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepThink.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -604,6 +611,7 @@
 		8AAF70821A6B9271001A6C6B /* presley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = presley.jpg; sourceTree = "<group>"; };
 		8AAF70841A6B93D2001A6C6B /* videl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = videl.jpg; sourceTree = "<group>"; };
 		8AAF70861A6B94AA001A6C6B /* alison.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alison.jpeg; sourceTree = "<group>"; };
+		8AD1D6531A6ECAD40031AADD /* KeepThinkLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeepThinkLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -650,6 +658,16 @@
 			);
 			name = teamMembers;
 			path = resources/images/teamMembers;
+			sourceTree = "<group>";
+		};
+		8A781AD91A7011BE002884C5 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				8A781ADA1A7011F9002884C5 /* easy.json */,
+				8A781ADC1A701455002884C5 /* medium.json */,
+				8A781ADE1A701515002884C5 /* difficult.json */,
+			);
+			name = JSON;
 			sourceTree = "<group>";
 		};
 		8A9E38251A682E68007FF5E3 = {
@@ -730,6 +748,7 @@
 		8A9E38661A6839A7007FF5E3 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				8A781AD91A7011BE002884C5 /* JSON */,
 				8AA064AE1A6AD86F00D65CFA /* icons */,
 				8A9E38671A6839B2007FF5E3 /* images */,
 			);
@@ -1071,6 +1090,7 @@
 		8AAF70721A6B87AA001A6C6B /* logo */ = {
 			isa = PBXGroup;
 			children = (
+				8AD1D6531A6ECAD40031AADD /* KeepThinkLogo.png */,
 				8AAF70731A6B87AA001A6C6B /* facebook_.png */,
 				8AAF70741A6B87AA001A6C6B /* github_.png */,
 				8AAF70771A6B87AA001A6C6B /* twitter_.png */,
@@ -1218,6 +1238,7 @@
 				8AA065B91A6AD87000D65CFA /* bottom4.png in Resources */,
 				8AA065BC1A6AD87000D65CFA /* chat26.png in Resources */,
 				8AA066761A6AD87000D65CFA /* Near_Me@2x.png in Resources */,
+				8A781ADD1A701455002884C5 /* medium.json in Resources */,
 				8AA065CB1A6AD87000D65CFA /* Add.png in Resources */,
 				8AA065BD1A6AD87000D65CFA /* connecting7.png in Resources */,
 				8AA065B61A6AD87000D65CFA /* arrow414.png in Resources */,
@@ -1238,6 +1259,7 @@
 				8AAF70831A6B9271001A6C6B /* presley.jpg in Resources */,
 				8AA0667F1A6AD87000D65CFA /* Photos@2x.png in Resources */,
 				8AA0663F1A6AD87000D65CFA /* Arrows_In@2x.png in Resources */,
+				8A781ADB1A7011F9002884C5 /* easy.json in Resources */,
 				8AA0666D1A6AD87000D65CFA /* Light_Bulb@2x.png in Resources */,
 				8AA066701A6AD87000D65CFA /* Male@2x.png in Resources */,
 				8AA065EC1A6AD87000D65CFA /* Flickr.png in Resources */,
@@ -1251,6 +1273,7 @@
 				8AA066311A6AD87000D65CFA /* Umbrella.png in Resources */,
 				8AA0665B1A6AD87000D65CFA /* Flickr@2x.png in Resources */,
 				8AA066811A6AD87000D65CFA /* Pill@2x.png in Resources */,
+				8AD1D6541A6ECAD40031AADD /* KeepThinkLogo.png in Resources */,
 				8AA066981A6AD87000D65CFA /* Syncing@2x.png in Resources */,
 				8AA065FD1A6AD87000D65CFA /* Layers.png in Resources */,
 				8AA0660E1A6AD87000D65CFA /* Origami.png in Resources */,
@@ -1264,6 +1287,7 @@
 				8AA066B01A6AD87000D65CFA /* wrong6.png in Resources */,
 				8AA066111A6AD87000D65CFA /* Picasa.png in Resources */,
 				8AA066081A6AD87000D65CFA /* Network_Closed.png in Resources */,
+				8A781ADF1A701515002884C5 /* difficult.json in Resources */,
 				8A9E386B1A6839C4007FF5E3 /* left.png in Resources */,
 				8AAF707E1A6B8B20001A6C6B /* sanket.jpg in Resources */,
 				8AA066401A6AD87000D65CFA /* Arrows_Out@2x.png in Resources */,
