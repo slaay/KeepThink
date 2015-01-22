@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8A9E382D1A682E68007FF5E3"
-               BuildableName = "KeepThink.app"
-               BlueprintName = "KeepThink"
+               BlueprintIdentifier = "8A1E4F231A716FBF00D60D54"
+               BuildableName = "KeepThink2.app"
+               BlueprintName = "KeepThink2"
                ReferencedContainer = "container:KeepThink.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,33 +28,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8A9E384E1A682E68007FF5E3"
-               BuildableName = "KeepThinkTests.xctest"
-               BlueprintName = "KeepThinkTests"
-               ReferencedContainer = "container:KeepThink.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8A1E4F421A716FBF00D60D54"
-               BuildableName = "KeepThink2Tests.xctest"
-               BlueprintName = "KeepThink2Tests"
-               ReferencedContainer = "container:KeepThink.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8A9E382D1A682E68007FF5E3"
-            BuildableName = "KeepThink.app"
-            BlueprintName = "KeepThink"
+            BlueprintIdentifier = "8A1E4F231A716FBF00D60D54"
+            BuildableName = "KeepThink2.app"
+            BlueprintName = "KeepThink2"
             ReferencedContainer = "container:KeepThink.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -71,9 +51,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8A9E382D1A682E68007FF5E3"
-            BuildableName = "KeepThink.app"
-            BlueprintName = "KeepThink"
+            BlueprintIdentifier = "8A1E4F231A716FBF00D60D54"
+            BuildableName = "KeepThink2.app"
+            BlueprintName = "KeepThink2"
             ReferencedContainer = "container:KeepThink.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -89,9 +69,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8A9E382D1A682E68007FF5E3"
-            BuildableName = "KeepThink.app"
-            BlueprintName = "KeepThink"
+            BlueprintIdentifier = "8A1E4F231A716FBF00D60D54"
+            BuildableName = "KeepThink2.app"
+            BlueprintName = "KeepThink2"
             ReferencedContainer = "container:KeepThink.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

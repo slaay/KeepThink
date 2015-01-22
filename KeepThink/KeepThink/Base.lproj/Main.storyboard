@@ -24,7 +24,7 @@
                                 <color key="textColor" red="0.71660094110000006" green="0.51259927839999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="robertPires.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="nTt-48-2P1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Arsenal_Robert_Pires.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="nTt-48-2P1">
                                 <rect key="frame" x="40" y="176" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -108,12 +108,16 @@
                     </view>
                     <connections>
                         <outlet property="btnResultColor" destination="I19-nu-euD" id="yN4-1Y-CLt"/>
+                        <outlet property="imgQuestion" destination="nTt-48-2P1" id="qYB-Oz-12p"/>
+                        <outlet property="lblCategory_1" destination="kwI-fL-CWK" id="bfx-IW-dCy"/>
+                        <outlet property="lblQuestion" destination="bUT-Bp-7rs" id="mxo-Le-kiE"/>
                         <outlet property="lblTimer" destination="KzG-RI-KVQ" id="C9N-Gr-V9S"/>
+                        <outlet property="lblcategory_2" destination="63Q-WA-kcy" id="CeK-ev-pNQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="448" y="743"/>
+            <point key="canvasLocation" x="504" y="732"/>
         </scene>
         <!--Kt About Me - Team Slaay-->
         <scene sceneID="qKh-SH-dJh">
@@ -520,6 +524,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Arsenal_Robert_Pires.JPG" width="501" height="600"/>
         <image name="Doc.png" width="19" height="25"/>
         <image name="Drawers.png" width="24" height="24"/>
         <image name="Fencing.png" width="35" height="29"/>
@@ -532,7 +537,6 @@
         <image name="left.png" width="128" height="128"/>
         <image name="presley.jpg" width="540" height="571"/>
         <image name="right.png" width="128" height="128"/>
-        <image name="robertPires.JPG" width="209" height="250"/>
         <image name="sanket.jpg" width="913" height="1026"/>
         <image name="twitter_.png" width="32" height="32"/>
         <image name="videl.jpg" width="250" height="250"/>

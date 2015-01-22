@@ -7,17 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KtJsonLogic.h"
 
 @interface KtViewController : UIViewController
 
+    @property (strong, nonatomic) IBOutlet UILabel *lblTimer;
+    @property (strong, nonatomic) IBOutlet UIButton *btnResultColor;
+    @property (strong, nonatomic) IBOutlet UILabel *lblQuestion;
+    @property (strong, nonatomic) IBOutlet UILabel *lblCategory_1;
+    @property (strong, nonatomic) IBOutlet UILabel *lblcategory_2;
+    @property (strong, nonatomic) IBOutlet UIImageView *imgQuestion;
 
 
-@property (strong, nonatomic) IBOutlet UILabel *lblTimer;
-- (IBAction)btnBarstartGame:(id)sender;
-- (IBAction)btnBarStopPressed:(id)sender;
-@property (strong, nonatomic) IBOutlet UIButton *btnResultColor;
-- (IBAction)btnLeft:(id)sender;
-- (IBAction)btnRight:(id)sender;
 
+    - (IBAction)btnBarstartGame:(id)sender;
+    - (IBAction)btnBarStopPressed:(id)sender;
+    - (IBAction)btnLeft:(id)sender;
+    - (IBAction)btnRight:(id)sender;
 
 @end

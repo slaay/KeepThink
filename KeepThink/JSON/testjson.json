@@ -1,0 +1,12 @@
+{"easy":
+    
+    {   "1":{"question":"For which team this player played for?", "category_1":"Liverpool", "category_2":"Arsenal", "answer":"Arsenal", "image":"Arsenal_Jack_Wilshere.jpg"},
+        "2":{"question":"For which team this player played for?", "category_1":"Arsenal", "category_2":"Aston Villa", "answer":"Arsenal", "image":"Arsenal_Laurent_Koscielny.jpg"},
+        "3":{"question":"For which team this player played for?", "category_1":"Arsenal", "category_2":"Everton", "answer":"Arsenal", "image":"Arsenal_Mesut_Özil.jpg"},
+        "4":{"question":"For which team this player played for?", "category_1":"Manchester United", "category_2":"Arsenal", "answer":"Arsenal", "image":"Arsenal_Wojciech_Szczesny.jpg"},
+        "5":{"question":"For which team this player played for?", "category_1":"Arsenal", "category_2":"Barcalona", "answer":"Arsenal", "image":"Arsenal_Tomas_Rosicky.jpg"},
+        "6":{"question":"For which team this player played for?", "category_1":"Southampton", "category_2":"Arsenal", "answer":"Arsenal", "image":"Arsenal_Per_Mertesacker.JPG"},
+        "7":{"question":"For which team this player played for?", "category_1":"Arsenal", "category_2":"Liverpool", "answer":"Arsenal"},
+    }
+    
+}

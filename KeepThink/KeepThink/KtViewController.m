@@ -52,7 +52,6 @@
  
  */
 
-
 - (void)updateTimer
 {
     // Create date from the elapsed time
@@ -71,8 +70,26 @@
     
     double timePassed_ms = [self.startTimeValue timeIntervalSinceNow] * -1000.0;
     
-    if (timePassed_ms > 1000) {
+    if (timePassed_ms > 2000) {
+        timePassed_ms = 0;
        [_btnResultColor setBackgroundColor:[UIColor whiteColor]];
+       
+        
+       NSArray * aNewQuestion = [KtJsonLogic getNextQuestion:1 DiffTypeValue:1];
+
+        // @[_Question, _Category_1, _Category_2, _ImageName, _ImageAnswer];
+        _lblQuestion.text = aNewQuestion[0];
+        _lblCategory_1.text = aNewQuestion[1];
+        _lblcategory_2.text = aNewQuestion[2];
+        
+        NSString *imgName = aNewQuestion[3];
+        NSString *trimmedImgName = [imgName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+       
+        if ((trimmedImgName.length == 0)) {
+        } else {
+            _imgQuestion.image = [UIImage imageNamed:trimmedImgName];
+        }
+        
     }
     
 }
