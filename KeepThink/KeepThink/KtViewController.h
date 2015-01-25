@@ -25,4 +25,8 @@
     - (IBAction)btnLeft:(id)sender;
     - (IBAction)btnRight:(id)sender;
 
+    @property (strong, nonatomic) IBOutlet UIButton *btnLeftOutLet;
+    @property (strong, nonatomic) IBOutlet UIButton *btnRightOutLet;
+
+
 @end

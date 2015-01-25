@@ -13,10 +13,10 @@
 
 @property (strong, nonatomic) NSTimer *stopWatchTimer; // Store the timer that fires after a certain time
 @property (strong, nonatomic) NSDate *startDate; // Stores the date of the click on the start button *
-
 @property (strong, nonatomic) NSDate *startTimeValue;
+@property(strong, nonatomic) NSDate *lastTimeTheQWasChanged;
 
-
+@property (strong, nonatomic) NSString *currentSide;
 
 @end
 
@@ -58,7 +58,8 @@
     NSDate *currentDate = [NSDate date];
     NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:self.startDate];
     NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
-    
+  
+   
     // Create a date formatter
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"HH:mm:ss.SSS"];
@@ -68,21 +69,34 @@
     NSString *timeString = [dateFormatter stringFromDate:timerDate];
     self.lblTimer.text = timeString;
     
-    double timePassed_ms = [self.startTimeValue timeIntervalSinceNow] * -1000.0;
+    //double timePassed_ms = [self.startTimeValue timeIntervalSinceNow] * -1000.0;
     
-    if (timePassed_ms > 2000) {
-        timePassed_ms = 0;
+    
+    NSTimeInterval timeInterValOfSeconds = [currentDate timeIntervalSinceDate:self.lastTimeTheQWasChanged];
+
+    if (timeInterValOfSeconds > MAX_SECONDS_COUNT) {
+        _btnLeftOutLet.enabled = TRUE;
+        _btnRightOutLet.enabled = TRUE;
+        
+        
+       self.lastTimeTheQWasChanged = [NSDate date];
+        
        [_btnResultColor setBackgroundColor:[UIColor whiteColor]];
        
         
        NSArray * aNewQuestion = [KtJsonLogic getNextQuestion:1 DiffTypeValue:1];
 
         // @[_Question, _Category_1, _Category_2, _ImageName, _ImageAnswer];
-        _lblQuestion.text = aNewQuestion[0];
-        _lblCategory_1.text = aNewQuestion[1];
-        _lblcategory_2.text = aNewQuestion[2];
+        _lblQuestion.text = aNewQuestion[INDEX_QUESTION];
+        _lblCategory_1.text = aNewQuestion[INDEX_CATEGORY_1];
+        _lblcategory_2.text = aNewQuestion[INDEX_CATEGORY_2];
+        self.currentSide = aNewQuestion[INDEX_SIDE];
         
-        NSString *imgName = aNewQuestion[3];
+        NSLog(@"         ");
+        NSLog(@"         ");
+        NSLog(@"Question : %@ , Cat 1 %@ , Cat 2 %@, Image %@, Answer %@ ", aNewQuestion[INDEX_QUESTION],aNewQuestion[INDEX_CATEGORY_1], aNewQuestion[INDEX_CATEGORY_2], aNewQuestion[INDEX_IMAGE_NAME], aNewQuestion[INDEX_ANSWER]);
+        
+        NSString *imgName = aNewQuestion[INDEX_IMAGE_NAME];
         NSString *trimmedImgName = [imgName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
        
         if ((trimmedImgName.length == 0)) {
@@ -95,27 +109,45 @@
 }
 - (IBAction)btnBarstartGame:(id)sender {
     self.startDate = [NSDate date];
-    
+
     // Create the stop watch timer that fires every 10 ms
     self.stopWatchTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/10.0
                                                            target:self
                                                          selector:@selector(updateTimer)
                                                          userInfo:nil
                                                           repeats:YES];
-  self.startTimeValue = [NSDate date];
+    self.startTimeValue = [NSDate date];
+    self.lastTimeTheQWasChanged = [NSDate date];
+    self.currentSide = @"";
 }
 
 - (IBAction)btnBarStopPressed:(id)sender {
     [self.stopWatchTimer invalidate];
     self.stopWatchTimer = nil;
     [self updateTimer];
+    self.lastTimeTheQWasChanged = [NSDate date];
+    self.currentSide = @"";
 }
+
 - (IBAction)btnLeft:(id)sender {
-   // _btnResultColor.backgroundColor = red;
-    [_btnResultColor setBackgroundColor:[UIColor greenColor]];
+    if ([self.currentSide isEqualToString:@"1"]){
+        [_btnResultColor setBackgroundColor:[UIColor greenColor]];
+    } else {
+        [_btnResultColor setBackgroundColor:[UIColor redColor]];
+    }
+    
+    _btnLeftOutLet.enabled = FALSE;
+    _btnRightOutLet.enabled = FALSE;
 }
 
 - (IBAction)btnRight:(id)sender {
-    [_btnResultColor setBackgroundColor:[UIColor redColor]];
+    if ([self.currentSide isEqualToString:@"2"]){
+        [_btnResultColor setBackgroundColor:[UIColor greenColor]];
+    } else {
+        [_btnResultColor setBackgroundColor:[UIColor redColor]];
+    }
+    
+    _btnLeftOutLet.enabled = FALSE;
+    _btnRightOutLet.enabled = FALSE;
 }
 @end

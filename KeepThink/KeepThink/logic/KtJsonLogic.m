@@ -26,11 +26,7 @@
     NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
     
     
-    //create an array and fill the array with random numbers
-    NSMutableArray *arrayOfRandomQuestions = [NSMutableArray array];
-    for (int i = 0; i < 10; i++) {
-        [arrayOfRandomQuestions addObject: [NSNumber numberWithInt: arc4random() % 10]];
-    }
+
     
     //Drop the pins : Fire in the hole!
     NSString *randomQuestionIndex;
@@ -38,6 +34,15 @@
     for (NSString *outerKey in jsonDictionary.allKeys) {
         
         NSDictionary *slot = [jsonDictionary valueForKey:outerKey];
+        
+        //Q : How many random number shall i get?
+        //A : As many as the object count for the inner array
+        //create an array and fill the array with random numbers
+        NSMutableArray *arrayOfRandomQuestions = [NSMutableArray array];
+        for (int i = 0; i < 10; i++) {
+            [arrayOfRandomQuestions addObject: [NSNumber numberWithInt: arc4random() % slot.count]];
+        }
+        
         
         for (int j=0; j <= arrayOfRandomQuestions.count -1; j++){
             
@@ -58,9 +63,10 @@
             NSString * _Category_2 = [innerDictionary valueForKey:keyCategory_2];
             NSString * _ImageName = [innerDictionary valueForKey:keyImageName];
             NSString * _ImageAnswer = [innerDictionary valueForKey:keyAnswer];
+            NSString * _Side = [innerDictionary valueForKey:keySide];
             
             
-            NSLog(@"_Question : %@, _Category_1 : %@, _Category_2 %@ , _ImageName %@, _ImageAnswer %@ :",_Question, _Category_1, _Category_2, _ImageName, _ImageAnswer);
+            NSLog(@"_Question : %@, _Category_1 : %@, _Category_2 %@ , _ImageName %@, _ImageAnswer %@ , _Side %@:",_Question, _Category_1, _Category_2, _ImageName, _ImageAnswer, _Side);
             
             NSString *trimmedQuestion = [_Question stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
             
@@ -69,7 +75,7 @@
                 continue;
             } else {
                 //Fill up the array
-                NSArray *arrayOfQuestionDetails = @[_Question, _Category_1, _Category_2, _ImageName, _ImageAnswer];
+                NSArray *arrayOfQuestionDetails = @[_Question, _Category_1, _Category_2, _ImageName, _ImageAnswer, _Side];
                 return arrayOfQuestionDetails;
 
             }
