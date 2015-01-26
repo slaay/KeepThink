@@ -12,6 +12,7 @@
 //http://stackoverflow.com/questions/7779672/best-method-to-determine-the-sender-of-an-event
 
 #import "KtAboutSlaayViewController.h"
+#import "SWRevealViewController.h"
 
 @interface KtAboutSlaayViewController ()
 
@@ -32,7 +33,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // Change button color
+    _sidebarButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
     
+    // Set the side bar button action. When it's tapped, it'll show up the sidebar.
+    _sidebarButton.target = self.revealViewController;
+    _sidebarButton.action = @selector(revealToggle:);
+    
+    // Set the gesture
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+    // Load image
+    self.photoImageView.image = [UIImage imageNamed:self.photoFilename];
     
     self.imgSanket.layer.cornerRadius = self.imgSanket.frame.size.width / 2;
     self.imgSanket.clipsToBounds = YES;
@@ -49,6 +61,18 @@
     self.imgAlison.clipsToBounds = YES;
     self.imgAlison.layer.borderWidth = 3.0f;
     self.imgAlison.layer.borderColor = [UIColor greenColor].CGColor;
+    
+    
+    self.imgPresley.layer.cornerRadius = self.imgPresley.frame.size.width / 2;
+    self.imgPresley.clipsToBounds = YES;
+    self.imgPresley.layer.borderWidth = 3.0f;
+    self.imgPresley.layer.borderColor = [UIColor greenColor].CGColor;
+    
+    
+    self.imgVidel.layer.cornerRadius = self.imgVidel.frame.size.width / 2;
+    self.imgVidel.clipsToBounds = YES;
+    self.imgVidel.layer.borderWidth = 3.0f;
+    self.imgVidel.layer.borderColor = [UIColor greenColor].CGColor;
 }
 
 - (void)didReceiveMemoryWarning

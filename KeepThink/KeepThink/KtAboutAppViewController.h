@@ -1,18 +1,14 @@
 //
-//  KtThirdPartyViewController.h
+//  KtAboutAppViewController.h
 //  KeepThink
 //
-//  Created by Presley on 18/01/15.
+//  Created by Presley on 26/01/15.
 //  Copyright (c) 2015 SlaaySourceCoders. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface KtThirdPartyViewController : UIViewController
-
-- (IBAction)btnWikipedia:(id)sender;
-
-- (IBAction)btnPixelLove:(id)sender;
+@interface KtAboutAppViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
 @property (strong, nonatomic) NSString *photoFilename;

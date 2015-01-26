@@ -28,5 +28,10 @@
     @property (strong, nonatomic) IBOutlet UIButton *btnLeftOutLet;
     @property (strong, nonatomic) IBOutlet UIButton *btnRightOutLet;
 
+    @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
+    @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
+    @property (strong, nonatomic) NSString *photoFilename;
+
+
 
 @end

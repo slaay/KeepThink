@@ -1,19 +1,19 @@
 //
-//  KtThirdPartyViewController.m
+//  KtSocialShareViewController.m
 //  KeepThink
 //
-//  Created by Presley on 18/01/15.
+//  Created by Presley on 26/01/15.
 //  Copyright (c) 2015 SlaaySourceCoders. All rights reserved.
 //
 
-#import "KtThirdPartyViewController.h"
+#import "KtSocialShareViewController.h"
 #import "SWRevealViewController.h"
 
-@interface KtThirdPartyViewController ()
+@interface KtSocialShareViewController ()
 
 @end
 
-@implementation KtThirdPartyViewController
+@implementation KtSocialShareViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -60,14 +60,4 @@
 }
 */
 
-- (IBAction)btnWikipedia:(id)sender {
-    NSURL *url = [NSURL URLWithString:@"http://en.wikipedia.org"];
-    [[UIApplication sharedApplication] openURL:url];
-   
-}
-
-- (IBAction)btnPixelLove:(id)sender {
-    NSURL *url = [NSURL URLWithString:@"http://www.pixellove.com"];
-    [[UIApplication sharedApplication] openURL:url];
-}
 @end
