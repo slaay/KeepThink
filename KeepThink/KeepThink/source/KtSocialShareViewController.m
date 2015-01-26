@@ -8,6 +8,7 @@
 
 #import "KtSocialShareViewController.h"
 #import "SWRevealViewController.h"
+#import "DWBubbleMenuButton.h"
 
 @interface KtSocialShareViewController ()
 
@@ -41,7 +42,87 @@
     
     // Load image
     self.photoImageView.image = [UIImage imageNamed:self.photoFilename];
+    
+    
+    
+    
+    
+    // Create up menu button
+    UILabel *homeLabel = [self createHomeButtonView];
+    
+    DWBubbleMenuButton *upMenuView = [[DWBubbleMenuButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width - homeLabel.frame.size.width - 20.f,
+                                                                                          self.view.frame.size.height - homeLabel.frame.size.height - 20.f,
+                                                                                          homeLabel.frame.size.width,
+                                                                                          homeLabel.frame.size.height)
+                                                            expansionDirection:DirectionUp];
+    upMenuView.homeButtonView = homeLabel;
+    
+    [upMenuView addButtons:[self createDemoButtonArray]];
+    
+    [self.view addSubview:upMenuView];
 }
+
+- (UILabel *)createHomeButtonView {
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0.f, 0.f, 120.f, 120.f)];
+    
+    label.text = @"Tap to share";
+    label.textColor = [UIColor whiteColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.layer.cornerRadius = label.frame.size.height / 2.f;
+    label.backgroundColor =[UIColor colorWithRed:0.f green:0.f blue:0.f alpha:0.5f];
+    label.clipsToBounds = YES;
+    
+    return label;
+}
+
+- (NSArray *)createDemoButtonArray {
+    NSMutableArray *buttonsMutable = [[NSMutableArray alloc] init];
+    
+    
+    //facebook
+    UIButton *btnFacebook = [UIButton buttonWithType:UIButtonTypeSystem];
+    UIImage *btnImage = [UIImage imageNamed:@"facebook_.png"];
+    
+    [btnFacebook setTitle:@"" forState:UIControlStateNormal];
+    btnFacebook.frame = CGRectMake(0.f, 0.f, 32.f, 32.f);
+    btnFacebook.tag = 0;
+    
+    [btnFacebook setBackgroundImage:btnImage forState:UIControlStateNormal];
+    [btnFacebook addTarget:self action:@selector(test:) forControlEvents:UIControlEventTouchUpInside];
+    [buttonsMutable addObject:btnFacebook];
+    
+    //Twitter
+    UIButton *btnTwitter = [UIButton buttonWithType:UIButtonTypeSystem];
+    [btnTwitter setTitle:@"" forState:UIControlStateNormal];
+    btnTwitter.frame = CGRectMake(0.f, 0.f, 32.f, 32.f);
+    btnTwitter.tag = 1;
+    btnImage = [UIImage imageNamed:@"twitter_.png"];
+    [btnTwitter setBackgroundImage:btnImage forState:UIControlStateNormal];
+    [btnTwitter addTarget:self action:@selector(test:) forControlEvents:UIControlEventTouchUpInside];
+    [buttonsMutable addObject:btnTwitter];
+    
+    
+    
+    return [buttonsMutable copy];
+}
+
+
+- (void)test:(UIButton *)sender {
+    NSLog(@"Button tapped, tag: %ld", (long)sender.tag);
+}
+
+- (UIButton *)createButtonWithName:(NSString *)imageName {
+    UIButton *button = [[UIButton alloc] init];
+    [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    [button sizeToFit];
+    
+    [button addTarget:self action:@selector(test:) forControlEvents:UIControlEventTouchUpInside];
+    
+    return button;
+}
+
+
+
 
 - (void)didReceiveMemoryWarning
 {

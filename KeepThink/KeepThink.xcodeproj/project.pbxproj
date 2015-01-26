@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A12B1021A76B5AD00DD953B /* DWBubbleMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A12B1011A76B5AD00DD953B /* DWBubbleMenuButton.m */; };
 		8A1E4F0C1A71594700D60D54 /* KtSharedVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1E4F0B1A71594700D60D54 /* KtSharedVariables.m */; };
 		8A1E4F101A715B2B00D60D54 /* Arsenal_Robert_Pires.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A1E4F0F1A715B2B00D60D54 /* Arsenal_Robert_Pires.JPG */; };
 		8A1E4F131A715BDE00D60D54 /* KtJsonLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1E4F121A715BDE00D60D54 /* KtJsonLogic.m */; };
@@ -87,6 +88,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A12B1001A76B5AD00DD953B /* DWBubbleMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBubbleMenuButton.h; sourceTree = "<group>"; };
+		8A12B1011A76B5AD00DD953B /* DWBubbleMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWBubbleMenuButton.m; sourceTree = "<group>"; };
 		8A1E4F0A1A71594700D60D54 /* KtSharedVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KtSharedVariables.h; path = logic/KtSharedVariables.h; sourceTree = "<group>"; };
 		8A1E4F0B1A71594700D60D54 /* KtSharedVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KtSharedVariables.m; path = logic/KtSharedVariables.m; sourceTree = "<group>"; };
 		8A1E4F0F1A715B2B00D60D54 /* Arsenal_Robert_Pires.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Arsenal_Robert_Pires.JPG; sourceTree = "<group>"; };
@@ -197,6 +200,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A12B0FF1A76B59F00DD953B /* BubbleMenuButton */ = {
+			isa = PBXGroup;
+			children = (
+				8A12B1001A76B5AD00DD953B /* DWBubbleMenuButton.h */,
+				8A12B1011A76B5AD00DD953B /* DWBubbleMenuButton.m */,
+			);
+			name = BubbleMenuButton;
+			sourceTree = "<group>";
+		};
 		8A1E4F0D1A7159B800D60D54 /* logic */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +451,7 @@
 		8AA066B91A6AE02700D65CFA /* source */ = {
 			isa = PBXGroup;
 			children = (
+				8A12B0FF1A76B59F00DD953B /* BubbleMenuButton */,
 				8A6903341A75667E006426C6 /* SideBarController */,
 				8A1E4F0E1A7159CA00D60D54 /* controllers */,
 				8A1E4F0D1A7159B800D60D54 /* logic */,
@@ -607,6 +620,7 @@
 				8AEBFB5C1A7632EE0034D4D0 /* PhotoViewController.m in Sources */,
 				8A93A9451A6BB6D500B1F976 /* KtThirdPartyViewController.m in Sources */,
 				8A9E38481A682E68007FF5E3 /* KtViewController.m in Sources */,
+				8A12B1021A76B5AD00DD953B /* DWBubbleMenuButton.m in Sources */,
 				8A1E4F131A715BDE00D60D54 /* KtJsonLogic.m in Sources */,
 				8AEBFB621A7635C30034D4D0 /* MainViewController.m in Sources */,
 				8AC72A3E1A75743B008A13E9 /* KtSocialShareViewController.m in Sources */,
