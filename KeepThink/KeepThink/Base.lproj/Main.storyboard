@@ -8,7 +8,6 @@
         <!--Kt About Me - Team Slaay-->
         <scene sceneID="qKh-SH-dJh">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cCj-Ui-YJ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="IDKtAboutMe" id="cWY-p7-aZK" customClass="KtAboutMe" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0l5-s0-6VF"/>
@@ -128,6 +127,7 @@
                         <outlet property="imgVidel" destination="mov-03-l2Q" id="9tR-86-aJU"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCj-Ui-YJ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2875" y="-215"/>
         </scene>
@@ -262,7 +262,6 @@
         <!--Kt About Slaay View Controller-->
         <scene sceneID="dk3-vV-ySg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="45n-dx-A3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="HK3-WC-o7z" customClass="KtAboutSlaayViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="l8v-xf-ZDt"/>
@@ -359,13 +358,13 @@
                         <outlet property="sidebarButton" destination="pFn-f4-ygt" id="8be-gq-XbM"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="45n-dx-A3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="514" y="-2945"/>
         </scene>
         <!--Main View Controller - Main View Controller-->
         <scene sceneID="LAk-Ul-Kgr">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hv0-a2-6kX" sceneMemberID="firstResponder"/>
                 <viewController title="Main View Controller" id="8WH-c4-eli" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xHQ-rl-Bkl"/>
@@ -407,6 +406,7 @@
                         <outlet property="sidebarButton" destination="w73-OB-P6h" id="zpj-I0-nyX"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hv0-a2-6kX" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="527" y="-27"/>
         </scene>
@@ -595,7 +595,6 @@
         <!--Navigation Controller-->
         <scene sceneID="54e-L2-iHe">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jgK-y1-v2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="V8W-My-vP7" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vrP-YC-bnu">
@@ -607,6 +606,7 @@
                         <segue destination="8WH-c4-eli" kind="relationship" relationship="rootViewController" id="OgS-PF-ycj"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jgK-y1-v2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-285" y="-217"/>
         </scene>
@@ -747,7 +747,6 @@
         <!--Kt Social Share View Controller-->
         <scene sceneID="0lv-mv-c0R">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rPW-h9-n7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="sXi-tk-7Ta" customClass="KtSocialShareViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nA7-l5-sHa"/>
@@ -785,6 +784,7 @@
                         <outlet property="sidebarButton" destination="N5k-hs-vsu" id="ZbJ-Uh-uNO"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rPW-h9-n7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="514" y="-745"/>
         </scene>

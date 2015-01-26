@@ -49,9 +49,7 @@
 		8AA066BC1A6AE05E00D65CFA /* KtAboutMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA066BB1A6AE05E00D65CFA /* KtAboutMe.m */; };
 		8AA0AC201A76137500F294F9 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AA0AC1E1A76137500F294F9 /* menu.png */; };
 		8AA0AC211A76137500F294F9 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AA0AC1F1A76137500F294F9 /* menu@2x.png */; };
-		8AA0AC2D1A7617FB00F294F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA0AC261A7617FB00F294F9 /* MainViewController.m */; };
 		8AA0AC2E1A7617FB00F294F9 /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA0AC281A7617FB00F294F9 /* SidebarViewController.m */; };
-		8AA0AC2F1A7617FB00F294F9 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA0AC2A1A7617FB00F294F9 /* MapViewController.m */; };
 		8AA0AC331A76188F00F294F9 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA0AC321A76188F00F294F9 /* SWRevealViewController.m */; };
 		8AA0AC3D1A761AC300F294F9 /* nav_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AA0AC341A761AC300F294F9 /* nav_bg.png */; };
 		8AA0AC481A761FF000F294F9 /* KtAboutAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA0AC471A761FF000F294F9 /* KtAboutAppViewController.m */; };
@@ -75,6 +73,7 @@
 		8AC72A441A75765C008A13E9 /* rightMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AC72A421A75765C008A13E9 /* rightMenu.jpg */; };
 		8AD1D6541A6ECAD40031AADD /* KeepThinkLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD1D6531A6ECAD40031AADD /* KeepThinkLogo.png */; };
 		8AEBFB5C1A7632EE0034D4D0 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBFB5B1A7632EE0034D4D0 /* PhotoViewController.m */; };
+		8AEBFB621A7635C30034D4D0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBFB611A7635C30034D4D0 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,12 +139,8 @@
 		8AA066BB1A6AE05E00D65CFA /* KtAboutMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KtAboutMe.m; path = source/KtAboutMe.m; sourceTree = "<group>"; };
 		8AA0AC1E1A76137500F294F9 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		8AA0AC1F1A76137500F294F9 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
-		8AA0AC251A7617FB00F294F9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		8AA0AC261A7617FB00F294F9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		8AA0AC271A7617FB00F294F9 /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarViewController.h; sourceTree = "<group>"; };
 		8AA0AC281A7617FB00F294F9 /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarViewController.m; sourceTree = "<group>"; };
-		8AA0AC291A7617FB00F294F9 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
-		8AA0AC2A1A7617FB00F294F9 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		8AA0AC311A76188F00F294F9 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		8AA0AC321A76188F00F294F9 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		8AA0AC341A761AC300F294F9 /* nav_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_bg.png; sourceTree = "<group>"; };
@@ -174,6 +169,8 @@
 		8AD1D6531A6ECAD40031AADD /* KeepThinkLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeepThinkLogo.png; sourceTree = "<group>"; };
 		8AEBFB5A1A7632EE0034D4D0 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		8AEBFB5B1A7632EE0034D4D0 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		8AEBFB601A7635C30034D4D0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8AEBFB611A7635C30034D4D0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,14 +211,12 @@
 		8A1E4F0E1A7159CA00D60D54 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8AEBFB601A7635C30034D4D0 /* MainViewController.h */,
+				8AEBFB611A7635C30034D4D0 /* MainViewController.m */,
 				8AEBFB5A1A7632EE0034D4D0 /* PhotoViewController.h */,
 				8AEBFB5B1A7632EE0034D4D0 /* PhotoViewController.m */,
-				8AA0AC251A7617FB00F294F9 /* MainViewController.h */,
-				8AA0AC261A7617FB00F294F9 /* MainViewController.m */,
 				8AA0AC271A7617FB00F294F9 /* SidebarViewController.h */,
 				8AA0AC281A7617FB00F294F9 /* SidebarViewController.m */,
-				8AA0AC291A7617FB00F294F9 /* MapViewController.h */,
-				8AA0AC2A1A7617FB00F294F9 /* MapViewController.m */,
 				8AC72A3C1A75743B008A13E9 /* KtSocialShareViewController.h */,
 				8AC72A3D1A75743B008A13E9 /* KtSocialShareViewController.m */,
 				8A9E38461A682E68007FF5E3 /* KtViewController.h */,
@@ -605,8 +600,6 @@
 				8A9E383E1A682E68007FF5E3 /* main.m in Sources */,
 				8A9E38421A682E68007FF5E3 /* KtAppDelegate.m in Sources */,
 				8AAF70811A6B8D82001A6C6B /* KtAboutSlaayViewController.m in Sources */,
-				8AA0AC2F1A7617FB00F294F9 /* MapViewController.m in Sources */,
-				8AA0AC2D1A7617FB00F294F9 /* MainViewController.m in Sources */,
 				8A1E4F0C1A71594700D60D54 /* KtSharedVariables.m in Sources */,
 				8AA066BC1A6AE05E00D65CFA /* KtAboutMe.m in Sources */,
 				8AA0AC481A761FF000F294F9 /* KtAboutAppViewController.m in Sources */,
@@ -615,6 +608,7 @@
 				8A93A9451A6BB6D500B1F976 /* KtThirdPartyViewController.m in Sources */,
 				8A9E38481A682E68007FF5E3 /* KtViewController.m in Sources */,
 				8A1E4F131A715BDE00D60D54 /* KtJsonLogic.m in Sources */,
+				8AEBFB621A7635C30034D4D0 /* MainViewController.m in Sources */,
 				8AC72A3E1A75743B008A13E9 /* KtSocialShareViewController.m in Sources */,
 				8AA0AC2E1A7617FB00F294F9 /* SidebarViewController.m in Sources */,
 			);
