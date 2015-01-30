@@ -24,6 +24,8 @@
 		8A5356A31A6B758A0069EBD8 /* casburn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A5356A21A6B758A0069EBD8 /* casburn.jpg */; };
 		8A69033D1A7567FC006426C6 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A69033B1A7567FC006426C6 /* background.png */; };
 		8A69033E1A7567FC006426C6 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A69033C1A7567FC006426C6 /* background@2x.png */; };
+		8A7829AD1A7BF69A00FEC4BF /* FileDownloadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7829AC1A7BF69A00FEC4BF /* FileDownloadInfo.m */; };
+		8A7DE6291A7BF913005C9B99 /* KtLevelDownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7DE6281A7BF913005C9B99 /* KtLevelDownloadController.m */; };
 		8A93A9451A6BB6D500B1F976 /* KtThirdPartyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A93A9441A6BB6D500B1F976 /* KtThirdPartyViewController.m */; };
 		8A9E38321A682E68007FF5E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9E38311A682E68007FF5E3 /* Foundation.framework */; };
 		8A9E38341A682E68007FF5E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9E38331A682E68007FF5E3 /* CoreGraphics.framework */; };
@@ -75,6 +77,7 @@
 		8AD1D6541A6ECAD40031AADD /* KeepThinkLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD1D6531A6ECAD40031AADD /* KeepThinkLogo.png */; };
 		8AEBFB5C1A7632EE0034D4D0 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBFB5B1A7632EE0034D4D0 /* PhotoViewController.m */; };
 		8AEBFB621A7635C30034D4D0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBFB611A7635C30034D4D0 /* MainViewController.m */; };
+		8AF6228B1A7AA26300A82B58 /* KtSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6228A1A7AA26300A82B58 /* KtSettingsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +112,10 @@
 		8A5356A21A6B758A0069EBD8 /* casburn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = casburn.jpg; sourceTree = "<group>"; };
 		8A69033B1A7567FC006426C6 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		8A69033C1A7567FC006426C6 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		8A7829AB1A7BF69A00FEC4BF /* FileDownloadInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDownloadInfo.h; sourceTree = "<group>"; };
+		8A7829AC1A7BF69A00FEC4BF /* FileDownloadInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDownloadInfo.m; sourceTree = "<group>"; };
+		8A7DE6271A7BF913005C9B99 /* KtLevelDownloadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KtLevelDownloadController.h; path = contollers/KtLevelDownloadController.h; sourceTree = "<group>"; };
+		8A7DE6281A7BF913005C9B99 /* KtLevelDownloadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KtLevelDownloadController.m; path = contollers/KtLevelDownloadController.m; sourceTree = "<group>"; };
 		8A93A9431A6BB6D500B1F976 /* KtThirdPartyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KtThirdPartyViewController.h; path = source/KtThirdPartyViewController.h; sourceTree = "<group>"; };
 		8A93A9441A6BB6D500B1F976 /* KtThirdPartyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KtThirdPartyViewController.m; path = source/KtThirdPartyViewController.m; sourceTree = "<group>"; };
 		8A9E382E1A682E68007FF5E3 /* KeepThink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepThink.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +181,8 @@
 		8AEBFB5B1A7632EE0034D4D0 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		8AEBFB601A7635C30034D4D0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		8AEBFB611A7635C30034D4D0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		8AF622891A7AA26300A82B58 /* KtSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KtSettingsTableViewController.h; sourceTree = "<group>"; };
+		8AF6228A1A7AA26300A82B58 /* KtSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KtSettingsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +221,8 @@
 		8A1E4F0D1A7159B800D60D54 /* logic */ = {
 			isa = PBXGroup;
 			children = (
+				8A7829AB1A7BF69A00FEC4BF /* FileDownloadInfo.h */,
+				8A7829AC1A7BF69A00FEC4BF /* FileDownloadInfo.m */,
 				8A1E4F0A1A71594700D60D54 /* KtSharedVariables.h */,
 				8A1E4F0B1A71594700D60D54 /* KtSharedVariables.m */,
 				8A1E4F111A715BDE00D60D54 /* KtJsonLogic.h */,
@@ -241,6 +252,10 @@
 				8A93A9441A6BB6D500B1F976 /* KtThirdPartyViewController.m */,
 				8AA0AC461A761FF000F294F9 /* KtAboutAppViewController.h */,
 				8AA0AC471A761FF000F294F9 /* KtAboutAppViewController.m */,
+				8AF622891A7AA26300A82B58 /* KtSettingsTableViewController.h */,
+				8AF6228A1A7AA26300A82B58 /* KtSettingsTableViewController.m */,
+				8A7DE6271A7BF913005C9B99 /* KtLevelDownloadController.h */,
+				8A7DE6281A7BF913005C9B99 /* KtLevelDownloadController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -611,10 +626,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A9E383E1A682E68007FF5E3 /* main.m in Sources */,
+				8AF6228B1A7AA26300A82B58 /* KtSettingsTableViewController.m in Sources */,
 				8A9E38421A682E68007FF5E3 /* KtAppDelegate.m in Sources */,
+				8A7829AD1A7BF69A00FEC4BF /* FileDownloadInfo.m in Sources */,
 				8AAF70811A6B8D82001A6C6B /* KtAboutSlaayViewController.m in Sources */,
 				8A1E4F0C1A71594700D60D54 /* KtSharedVariables.m in Sources */,
 				8AA066BC1A6AE05E00D65CFA /* KtAboutMe.m in Sources */,
+				8A7DE6291A7BF913005C9B99 /* KtLevelDownloadController.m in Sources */,
 				8AA0AC481A761FF000F294F9 /* KtAboutAppViewController.m in Sources */,
 				8AA0AC331A76188F00F294F9 /* SWRevealViewController.m in Sources */,
 				8AEBFB5C1A7632EE0034D4D0 /* PhotoViewController.m in Sources */,
