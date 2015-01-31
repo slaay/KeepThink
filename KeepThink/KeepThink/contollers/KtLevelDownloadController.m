@@ -55,7 +55,7 @@
     self.tblFiles.scrollEnabled = NO;
     
     
-    NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration backgroundSessionConfiguration:@"com.BGTransferDemo"];
+    NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration backgroundSessionConfiguration:@"com.slaaysourcecoders.KeepThink"]; //com.BGTransferDemo
     sessionConfiguration.HTTPMaximumConnectionsPerHost = 5;
     
     
@@ -76,6 +76,8 @@
     
     // Load image
     self.photoImageView.image = [UIImage imageNamed:self.photoFilename];
+    
+    self.title = @"Level downloads";
 
 }
 
@@ -91,11 +93,10 @@
 -(void)initializeFileDownloadDataArray{
     self.arrFileDownloadData = [[NSMutableArray alloc] init];
     
-    [self.arrFileDownloadData addObject:[[FileDownloadInfo alloc] initWithFileTitle:@"iOS Programming Guide" andDownloadSource:@"http://localhost:8888/keepThink/hudson.war"]];
-    [self.arrFileDownloadData addObject:[[FileDownloadInfo alloc] initWithFileTitle:@"Human Interface Guidelines" andDownloadSource:@"http://localhost:8888/keepThink/hudson.war"]];
-    [self.arrFileDownloadData addObject:[[FileDownloadInfo alloc] initWithFileTitle:@"Networking Overview" andDownloadSource:@"http://localhost:8888/keepThink/hudson.war"]];
-    [self.arrFileDownloadData addObject:[[FileDownloadInfo alloc] initWithFileTitle:@"AV Foundation" andDownloadSource:@"http://localhost:8888/keepThink/hudson.war"]];
-    [self.arrFileDownloadData addObject:[[FileDownloadInfo alloc] initWithFileTitle:@"iPhone User Guide" andDownloadSource:@"http://localhost:8888/keepThink/hudson.war"]];
+    [self.arrFileDownloadData addObject:[[FileDownloadInfo alloc] initWithFileTitle:@"Download easy level" andDownloadSource:@"http://localhost:8888/keepThink/hudson.war"]];
+    [self.arrFileDownloadData addObject:[[FileDownloadInfo alloc] initWithFileTitle:@"Download medium level" andDownloadSource:@"http://localhost:8888/keepThink/hudson.war"]];
+    [self.arrFileDownloadData addObject:[[FileDownloadInfo alloc] initWithFileTitle:@"Download difficult level" andDownloadSource:@"http://localhost:8888/keepThink/hudson.war"]];
+    [self.arrFileDownloadData addObject:[[FileDownloadInfo alloc] initWithFileTitle:@"Download extra levels" andDownloadSource:@"http://localhost:8888/keepThink/hudson.war"]];
 }
 
 
@@ -399,13 +400,18 @@
     }
     else{
         NSLog(@"Unable to copy temp file. Error: %@", [error localizedDescription]);
+
     }
 }
 
 
 -(void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error{
     if (error != nil) {
-        NSLog(@"Download completed with error: %@", [error localizedDescription]);
+        NSString * errorMessage = @"Download completed with error: ";
+        errorMessage = [errorMessage stringByAppendingString: [error localizedDescription]];
+        
+        NSLog(@"%@", errorMessage);
+
     }
     else{
         NSLog(@"Download finished successfully.");

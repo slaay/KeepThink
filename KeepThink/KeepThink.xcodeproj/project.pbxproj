@@ -21,6 +21,12 @@
 		8A1E4F771A7172AD00D60D54 /* testjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A1E4F6F1A7172AD00D60D54 /* testjson.json */; };
 		8A35BB7B1A6C258A008BC111 /* 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A35BB7A1A6C258A008BC111 /* 640x960.png */; };
 		8A35BB7D1A6C25D4008BC111 /* 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A35BB7C1A6C25D4008BC111 /* 640x1136.png */; };
+		8A4617841A7CD96900E82098 /* pause-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A46177E1A7CD96900E82098 /* pause-25.png */; };
+		8A4617851A7CD96900E82098 /* pause-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A46177F1A7CD96900E82098 /* pause-50.png */; };
+		8A4617861A7CD96900E82098 /* play-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4617801A7CD96900E82098 /* play-25.png */; };
+		8A4617871A7CD96900E82098 /* play-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4617811A7CD96900E82098 /* play-50.png */; };
+		8A4617881A7CD96900E82098 /* stop-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4617821A7CD96900E82098 /* stop-25.png */; };
+		8A4617891A7CD96900E82098 /* stop-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4617831A7CD96900E82098 /* stop-50.png */; };
 		8A5356A31A6B758A0069EBD8 /* casburn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A5356A21A6B758A0069EBD8 /* casburn.jpg */; };
 		8A69033D1A7567FC006426C6 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A69033B1A7567FC006426C6 /* background.png */; };
 		8A69033E1A7567FC006426C6 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A69033C1A7567FC006426C6 /* background@2x.png */; };
@@ -109,6 +115,12 @@
 		8A1E4F6F1A7172AD00D60D54 /* testjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testjson.json; sourceTree = "<group>"; };
 		8A35BB7A1A6C258A008BC111 /* 640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x960.png; sourceTree = "<group>"; };
 		8A35BB7C1A6C25D4008BC111 /* 640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x1136.png; sourceTree = "<group>"; };
+		8A46177E1A7CD96900E82098 /* pause-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause-25.png"; sourceTree = "<group>"; };
+		8A46177F1A7CD96900E82098 /* pause-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause-50.png"; sourceTree = "<group>"; };
+		8A4617801A7CD96900E82098 /* play-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-25.png"; sourceTree = "<group>"; };
+		8A4617811A7CD96900E82098 /* play-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-50.png"; sourceTree = "<group>"; };
+		8A4617821A7CD96900E82098 /* stop-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop-25.png"; sourceTree = "<group>"; };
+		8A4617831A7CD96900E82098 /* stop-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop-50.png"; sourceTree = "<group>"; };
 		8A5356A21A6B758A0069EBD8 /* casburn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = casburn.jpg; sourceTree = "<group>"; };
 		8A69033B1A7567FC006426C6 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		8A69033C1A7567FC006426C6 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
@@ -279,6 +291,19 @@
 			name = launchscreen;
 			sourceTree = "<group>";
 		};
+		8A46177D1A7CD96900E82098 /* appImages */ = {
+			isa = PBXGroup;
+			children = (
+				8A46177E1A7CD96900E82098 /* pause-25.png */,
+				8A46177F1A7CD96900E82098 /* pause-50.png */,
+				8A4617801A7CD96900E82098 /* play-25.png */,
+				8A4617811A7CD96900E82098 /* play-50.png */,
+				8A4617821A7CD96900E82098 /* stop-25.png */,
+				8A4617831A7CD96900E82098 /* stop-50.png */,
+			);
+			path = appImages;
+			sourceTree = "<group>";
+		};
 		8A5356A11A6B758A0069EBD8 /* teamMembers */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,7 +443,7 @@
 				8A35BB791A6C257D008BC111 /* launchscreen */,
 				8AAF70721A6B87AA001A6C6B /* logo */,
 				8A5356A11A6B758A0069EBD8 /* teamMembers */,
-				8AA066B81A6AD89700D65CFA /* AppImages */,
+				8AA066B81A6AD89700D65CFA /* AllAppImages */,
 				8AA066B71A6AD88A00D65CFA /* GameImages */,
 			);
 			name = images;
@@ -454,13 +479,14 @@
 			name = GameImages;
 			sourceTree = "<group>";
 		};
-		8AA066B81A6AD89700D65CFA /* AppImages */ = {
+		8AA066B81A6AD89700D65CFA /* AllAppImages */ = {
 			isa = PBXGroup;
 			children = (
+				8A46177D1A7CD96900E82098 /* appImages */,
 				8A9E38681A6839BD007FF5E3 /* right.png */,
 				8A9E386A1A6839C4007FF5E3 /* left.png */,
 			);
-			name = AppImages;
+			name = AllAppImages;
 			sourceTree = "<group>";
 		};
 		8AA066B91A6AE02700D65CFA /* source */ = {
@@ -581,16 +607,22 @@
 				8AA066B11A6AD87000D65CFA /* Arsenal_Jack_Wilshere.jpg in Resources */,
 				8A35BB7B1A6C258A008BC111 /* 640x960.png in Resources */,
 				8A69033E1A7567FC006426C6 /* background@2x.png in Resources */,
+				8A4617891A7CD96900E82098 /* stop-50.png in Resources */,
 				8AAF70871A6B94AA001A6C6B /* alison.jpeg in Resources */,
 				8A5356A31A6B758A0069EBD8 /* casburn.jpg in Resources */,
 				8A9E383C1A682E68007FF5E3 /* InfoPlist.strings in Resources */,
+				8A4617851A7CD96900E82098 /* pause-50.png in Resources */,
 				8A69033D1A7567FC006426C6 /* background.png in Resources */,
+				8A4617861A7CD96900E82098 /* play-25.png in Resources */,
 				8A9E38691A6839BD007FF5E3 /* right.png in Resources */,
 				8AAF70781A6B87AA001A6C6B /* facebook_.png in Resources */,
+				8A4617841A7CD96900E82098 /* pause-25.png in Resources */,
+				8A4617881A7CD96900E82098 /* stop-25.png in Resources */,
 				8AA0AC4E1A762F5700F294F9 /* teamslaay.png in Resources */,
 				8AA066B21A6AD87000D65CFA /* Arsenal_Laurent_Koscielny.jpg in Resources */,
 				8AA0AC501A762F5700F294F9 /* share.png in Resources */,
 				8AA0AC3D1A761AC300F294F9 /* nav_bg.png in Resources */,
+				8A4617871A7CD96900E82098 /* play-50.png in Resources */,
 				8AA066B61A6AD87000D65CFA /* Arsenal_Wojciech_Szczesny.jpg in Resources */,
 				8A1E4F701A7172AD00D60D54 /* difficult.json in Resources */,
 				8A1E4F741A7172AD00D60D54 /* medium.json in Resources */,
