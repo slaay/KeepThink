@@ -31,4 +31,14 @@
     extern NSInteger const INDEX_IMAGE_NAME;
     extern NSInteger const INDEX_ANSWER;
     extern NSInteger const INDEX_SIDE;
+
+
+    extern NSString *LINK_Faceboook;
+    extern NSString *LINK_Twitter;
+    extern NSString *LINK_GitHub;
+    extern NSString *LINK_SLaaySourcecoders;
+    extern NSString *LINK_SlaayFB_Profile;
+    extern NSString *LINK_Github_Profile;
+
+    extern NSString *SHARE_text;
 @end

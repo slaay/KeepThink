@@ -13,6 +13,8 @@
 
 #import "KtAboutSlaayViewController.h"
 #import "SWRevealViewController.h"
+#import <Twitter/Twitter.h>
+#import <Social/Social.h>
 
 @interface KtAboutSlaayViewController ()
 
@@ -32,7 +34,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    
+    self.title = @"Team Slaay";
     // Change button color
     _sidebarButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
     
@@ -92,32 +96,79 @@
 }
 */
 
-- (IBAction)btnFacebook:(id)sender {
+
+
+- (IBAction)btnSocialShare:(id)sender {
+   
+   
+//    if ([sender tag] == 1) {
+//        //Sanket Malik
+//        NSLog(@"Sanket Malik");
+//        facebookURL = [NSURL URLWithString:@"fb://profile/379887218802553"];
+//    }
+//    else if ([sender tag] == 2) {
+//        //Casburn
+//        NSLog(@"Casburn");
+//        facebookURL = [NSURL URLWithString:@"fb://profile/379887218802553"];
+//    }
+//    else if ([sender tag] == 3) {
+//        //Alison
+//        NSLog(@"Alison");
+//        facebookURL = [NSURL URLWithString:@"fb://profile/379887218802553"];
+//    }
     
     
-    NSURL *facebookURL;
+    if ([sender tag] == 1){
+        NSURL *facebookURL = [NSURL URLWithString:LINK_SlaayFB_Profile];
+        if ([[UIApplication sharedApplication] canOpenURL:facebookURL]) {
+            [[UIApplication sharedApplication] openURL:facebookURL];
+        } else {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:LINK_Faceboook]];
+        }
+    } //Facebook share
+    else if ([sender tag] == 2) {
+        if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
+        {
+            SLComposeViewController *tweetSheet = [SLComposeViewController
+                                                   composeViewControllerForServiceType:SLServiceTypeTwitter];
+            if (tweetSheet){
+              [tweetSheet addImage:[UIImage imageNamed:@"KeepThinkLogo.png"]];
+              [tweetSheet addURL:[NSURL URLWithString:LINK_SLaaySourcecoders]];
+              [tweetSheet setInitialText:SHARE_text];
+                
+              [tweetSheet setCompletionHandler:^(SLComposeViewControllerResult result) {
+                    if (result == SLComposeViewControllerResultDone) {
+                        NSLog(@"Posted");
+                   } else if (result == SLComposeViewControllerResultCancelled) {
+                        NSLog(@"Post Cancelled");
+                    } else {
+                        NSLog(@"Post Failed");
+                    }
+                }];
+                
+              [self presentViewController:tweetSheet animated:YES completion:nil];
+                
+            }
+            
+
+        } else {
+            if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7)
+            { SLComposeViewController *tweetSheet = [SLComposeViewController
+                                                     composeViewControllerForServiceType:SLServiceTypeTwitter];
+                [tweetSheet setInitialText:SHARE_text];
+                
+                [self presentViewController:tweetSheet animated:YES completion:nil];
+                
+                
+                //inform the user that no account is configured with alarm view.
+            }
+            
+        }
     
-    if ([sender tag] == 3) {
-        //Sanket Malik
-        NSLog(@"Sanket Malik");
-        facebookURL = [NSURL URLWithString:@"fb://profile/379887218802553"];
-    }
-    else if ([sender tag] == 4) {
-        //Casburn
-        NSLog(@"Casburn");
-        facebookURL = [NSURL URLWithString:@"fb://profile/379887218802553"];
-    }
-    else if ([sender tag] == 5) {
-        //Alison
-        NSLog(@"Alison");
-        facebookURL = [NSURL URLWithString:@"fb://profile/379887218802553"];
-    }
-    
-    
-    if ([[UIApplication sharedApplication] canOpenURL:facebookURL]) {
-        [[UIApplication sharedApplication] openURL:facebookURL];
-    } else {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.facebook.com/slaaysourcecoders"]];
-    }
+    } //Twitter share
+    else if ([sender tag] == 3) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:LINK_Github_Profile]];
+       
+    } //Github
 }
 @end

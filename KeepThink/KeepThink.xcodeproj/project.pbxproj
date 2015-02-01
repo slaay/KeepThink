@@ -30,6 +30,7 @@
 		8A5356A31A6B758A0069EBD8 /* casburn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A5356A21A6B758A0069EBD8 /* casburn.jpg */; };
 		8A69033D1A7567FC006426C6 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A69033B1A7567FC006426C6 /* background.png */; };
 		8A69033E1A7567FC006426C6 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A69033C1A7567FC006426C6 /* background@2x.png */; };
+		8A751BEE1A7DFCAA00BB0FAC /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A751BED1A7DFCAA00BB0FAC /* Twitter.framework */; };
 		8A7829AD1A7BF69A00FEC4BF /* FileDownloadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7829AC1A7BF69A00FEC4BF /* FileDownloadInfo.m */; };
 		8A7DE6291A7BF913005C9B99 /* KtLevelDownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7DE6281A7BF913005C9B99 /* KtLevelDownloadController.m */; };
 		8A93A9451A6BB6D500B1F976 /* KtThirdPartyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A93A9441A6BB6D500B1F976 /* KtThirdPartyViewController.m */; };
@@ -124,6 +125,7 @@
 		8A5356A21A6B758A0069EBD8 /* casburn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = casburn.jpg; sourceTree = "<group>"; };
 		8A69033B1A7567FC006426C6 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		8A69033C1A7567FC006426C6 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		8A751BED1A7DFCAA00BB0FAC /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		8A7829AB1A7BF69A00FEC4BF /* FileDownloadInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDownloadInfo.h; sourceTree = "<group>"; };
 		8A7829AC1A7BF69A00FEC4BF /* FileDownloadInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDownloadInfo.m; sourceTree = "<group>"; };
 		8A7DE6271A7BF913005C9B99 /* KtLevelDownloadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KtLevelDownloadController.h; path = contollers/KtLevelDownloadController.h; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A751BEE1A7DFCAA00BB0FAC /* Twitter.framework in Frameworks */,
 				8A9E38341A682E68007FF5E3 /* CoreGraphics.framework in Frameworks */,
 				8A9E38361A682E68007FF5E3 /* UIKit.framework in Frameworks */,
 				8A9E38321A682E68007FF5E3 /* Foundation.framework in Frameworks */,
@@ -373,6 +376,7 @@
 		8A9E38301A682E68007FF5E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8A751BED1A7DFCAA00BB0FAC /* Twitter.framework */,
 				8A9E38311A682E68007FF5E3 /* Foundation.framework */,
 				8A9E38331A682E68007FF5E3 /* CoreGraphics.framework */,
 				8A9E38351A682E68007FF5E3 /* UIKit.framework */,

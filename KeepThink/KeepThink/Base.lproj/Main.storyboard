@@ -5,10 +5,10 @@
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Kt About Me - Team Slaay-->
+        <!--View Controller - Team Slaay-->
         <scene sceneID="qKh-SH-dJh">
             <objects>
-                <viewController storyboardIdentifier="IDKtAboutMe" id="cWY-p7-aZK" customClass="KtAboutMe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IDKtAboutMe" id="cWY-p7-aZK" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0l5-s0-6VF"/>
                         <viewControllerLayoutGuide type="bottom" id="Awg-os-z10"/>
@@ -131,10 +131,10 @@
             </objects>
             <point key="canvasLocation" x="1411" y="169"/>
         </scene>
-        <!--Kt About Slaay View Controller-->
+        <!--View Controller-->
         <scene sceneID="SVC-xO-6B2">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="yd4-Ng-xOH" customClass="KtAboutSlaayViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="yd4-Ng-xOH" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fas-qK-5sU"/>
                         <viewControllerLayoutGuide type="bottom" id="WBc-V1-3MN"/>
@@ -203,9 +203,6 @@
                                 <state key="normal" image="facebook_.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="btnFacebook:" destination="yd4-Ng-xOH" eventType="touchUpInside" id="AOK-V3-NHp"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mz-xl-MS2">
                                 <rect key="frame" x="144" y="443" width="33" height="29"/>
@@ -327,20 +324,29 @@
                                 <state key="normal" image="facebook_.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnSocialShare:" destination="HK3-WC-o7z" eventType="touchUpInside" id="vWJ-Vz-oqX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5t-nk-Nyc">
-                                <rect key="frame" x="144" y="449" width="36" height="31"/>
+                                <rect key="frame" x="146" y="449" width="36" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="twitter_.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnSocialShare:" destination="HK3-WC-o7z" eventType="touchUpInside" id="6Gd-fR-Pjl"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAK-gO-m0E">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQK-xf-zXH">
                                 <rect key="frame" x="183" y="449" width="36" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="github_.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnSocialShare:" destination="HK3-WC-o7z" eventType="touchUpInside" id="lYY-Eg-xKb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1010,7 +1016,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqQ-nL-d19" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-657" y="644"/>
+            <point key="canvasLocation" x="521" y="1318"/>
         </scene>
     </scenes>
     <resources>

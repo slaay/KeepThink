@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KtSharedVariables.h"
 
 @interface KtSocialShareViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
-@property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
-@property (strong, nonatomic) NSString *photoFilename;
+    @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
+    @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
+    @property (strong, nonatomic) NSString *photoFilename;
 @end

@@ -9,6 +9,8 @@
 #import "KtSocialShareViewController.h"
 #import "SWRevealViewController.h"
 #import "DWBubbleMenuButton.h"
+#import <Twitter/Twitter.h>
+#import <Social/Social.h>
 
 @interface KtSocialShareViewController ()
 
@@ -109,6 +111,57 @@
 
 - (void)test:(UIButton *)sender {
     NSLog(@"Button tapped, tag: %ld", (long)sender.tag);
+    
+    if ([sender tag] == 0){
+        
+        NSURL *facebookURL = [NSURL URLWithString:LINK_SlaayFB_Profile];
+        if ([[UIApplication sharedApplication] canOpenURL:facebookURL]) {
+            [[UIApplication sharedApplication] openURL:facebookURL];
+        } else {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:LINK_Faceboook]];
+        }
+    } //Facebook share
+    else if ([sender tag] == 1) {
+        if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
+        {
+            SLComposeViewController *tweetSheet = [SLComposeViewController
+                                                   composeViewControllerForServiceType:SLServiceTypeTwitter];
+            if (tweetSheet){
+                [tweetSheet addImage:[UIImage imageNamed:@"KeepThinkLogo.png"]];
+                [tweetSheet addURL:[NSURL URLWithString:LINK_SLaaySourcecoders]];
+                [tweetSheet setInitialText:SHARE_text];
+                
+                [tweetSheet setCompletionHandler:^(SLComposeViewControllerResult result) {
+                    if (result == SLComposeViewControllerResultDone) {
+                        NSLog(@"Posted");
+                    } else if (result == SLComposeViewControllerResultCancelled) {
+                        NSLog(@"Post Cancelled");
+                    } else {
+                        NSLog(@"Post Failed");
+                    }
+                }];
+                
+                [self presentViewController:tweetSheet animated:YES completion:nil];
+                
+            }
+            
+            
+        } else {
+            if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7)
+            { SLComposeViewController *tweetSheet = [SLComposeViewController
+                                                     composeViewControllerForServiceType:SLServiceTypeTwitter];
+                [tweetSheet setInitialText:SHARE_text];
+                
+                [self presentViewController:tweetSheet animated:YES completion:nil];
+                
+                
+                //inform the user that no account is configured with alarm view.
+            }
+            
+        }
+        
+    } //Twitter share
+   
 }
 
 - (UIButton *)createButtonWithName:(NSString *)imageName {

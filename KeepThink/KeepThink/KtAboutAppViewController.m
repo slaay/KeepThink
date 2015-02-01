@@ -41,6 +41,8 @@
     
     // Load image
     self.photoImageView.image = [UIImage imageNamed:self.photoFilename];
+    
+    self.title = @"About App";
 
 }
 
